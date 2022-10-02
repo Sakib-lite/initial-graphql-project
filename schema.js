@@ -10,7 +10,8 @@ const typeDefs = gql`
     image: String!
     onSale: Boolean
     categoryId: String!
-    category:Category
+    category: Category
+    reviews:[Review!]!
   }
 
   type Query {
@@ -24,6 +25,15 @@ const typeDefs = gql`
     id: ID!
     name: String!
     products: [Product!]!
+  }
+
+  type Review {
+    id: String!
+    date: String!
+    title: String!
+    comment: String!
+    rating: Float!
+    productId: ID!
   }
 `;
 
