@@ -1,5 +1,12 @@
 const Query = {
-  products: (parent, args, { db }) => db.products,
+  products: (parent, { filter }, { db }) => {
+    if (filter) {
+      if (filter.onStock) {
+        return db.products.filter((prod) => prod.onStock);
+      }
+    }
+    return db.products;
+  },
   product: (parent, { id }, { db }) => {
     return db.products.find((product) => product.id === id);
   },

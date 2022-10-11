@@ -6,7 +6,7 @@ const products = [
     quantity: 230,
     price: 42.44,
     image: 'img-1',
-    onSale: false,
+    onStock: false,
     categoryId: 'c01b1ff4-f894-4ef2-b27a-22aacc2fca70',
   },
   {
@@ -16,7 +16,7 @@ const products = [
     quantity: 33,
     price: 53.5,
     image: 'img-2',
-    onSale: false,
+    onStock: false,
     categoryId: 'c01b1ff4-f894-4ef2-b27a-22aacc2fca70',
   },
   {
@@ -26,7 +26,7 @@ const products = [
     quantity: 4266,
     price: 1.33,
     image: 'img-3',
-    onSale: true,
+    onStock: true,
     categoryId: 'c01b1ff4-f894-4ef2-b27a-22aacc2fca70',
   },
   {
@@ -36,7 +36,7 @@ const products = [
     quantity: 753,
     price: 332,
     image: 'img-4',
-    onSale: false,
+    onStock: false,
     categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b',
   },
   {
@@ -46,7 +46,7 @@ const products = [
     quantity: 53453,
     price: 23.11,
     image: 'img-5',
-    onSale: true,
+    onStock: true,
     categoryId: '34115aac-0ff5-4859-8f43-10e8db23602b',
   },
   {
@@ -56,7 +56,7 @@ const products = [
     quantity: 128,
     price: 59.99,
     image: 'img-6',
-    onSale: true,
+    onStock: true,
     categoryId: 'd914aec0-25b2-4103-9ed8-225d39018d1d',
   },
   {
@@ -66,7 +66,7 @@ const products = [
     quantity: 3,
     price: 427.44,
     image: 'img-7',
-    onSale: false,
+    onStock: false,
     categoryId: 'd914aec0-25b2-4103-9ed8-225d39018d1d',
   },
   {
@@ -76,7 +76,7 @@ const products = [
     quantity: 745,
     price: 77.0,
     image: 'img-8',
-    onSale: true,
+    onStock: true,
     categoryId: 'd914aec0-25b2-4103-9ed8-225d39018d1d',
   },
   {
@@ -86,7 +86,7 @@ const products = [
     quantity: 734,
     price: 93.44,
     image: 'img-9',
-    onSale: false,
+    onStock: false,
     categoryId: 'd914aec0-25b2-4103-9ed8-225d39018d1d',
   },
 ];

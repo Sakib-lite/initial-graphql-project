@@ -15,11 +15,17 @@ const typeDefs = gql`
   }
 
   type Query {
-    products: [Product!]!
+    products(filter:checkStockInput): [Product!]!
     product(id: ID!): Product
     categories: [Category]!
     category(id: ID!): Category
   }
+
+type Mutation{
+  addCategory(input:addCategoryInput!):Category!
+  addProduct(input:addProductInput!) : Product!
+  addReview(input: AddReviewInput!): Review!
+}
 
   type Category {
     id: ID!
@@ -35,6 +41,35 @@ const typeDefs = gql`
     rating: Float!
     productId: ID!
   }
+
+input checkStockInput{
+  onStock:Boolean
+}
+
+input addCategoryInput{
+  name: String!
+}
+
+input addProductInput{
+    name: String!
+    description: String!
+    quantity: Int!
+    image: String!
+    price: Float!
+    onSale: Boolean!
+    categoryId: String
+  
+}
+
+
+input AddReviewInput {
+    date: String!
+    title: String!
+    comment: String!
+    rating: Int!
+    productId: ID!
+  }
+
 `;
 
 module.exports = typeDefs;
